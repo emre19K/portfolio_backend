@@ -13,5 +13,5 @@ app.use('/quiz', Routes);
 
 app.listen(process.env.PORT || 8080, () => console.log('Server wartet auf Anfragen...'));
 
-mongoose.connect(process.env.MONGOURI || 'mongodb://127.0.0.1:27017', () => console.log('Datenbank online!'));
+mongoose.connect('mongodb+srv://admin:sfA5lsIHc0jKtjN6@cluster0.j4hrglf.mongodb.net/?retryWrites=true&w=majority', () => console.log('Datenbank online!'));
 
