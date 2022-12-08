@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const json = require('body-parser').json();
+const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -8,6 +9,7 @@ const Routes = require('./endpoints/quiz/Routes');
 
 const app = express();
 
+app.use('cors');
 app.use(json);
 app.use('/quiz', Routes);
 
