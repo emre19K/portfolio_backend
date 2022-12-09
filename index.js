@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors());
 app.use(json);
-app.use('/quiz', Routes);
+app.use('/api', Routes);
 
 app.listen(process.env.PORT || 8080, () => console.log('Server wartet auf Anfragen...'));
 
