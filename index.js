@@ -15,5 +15,5 @@ app.use('/api', Routes);
 
 app.listen(process.env.PORT || 8080, () => console.log('Server wartet auf Anfragen...'));
 
-mongoose.connect('mongodb+srv://admin:jIosPtbsgL11VazN@cluster0.j4hrglf.mongodb.net/?retryWrites=true&w=majority', () => console.log('Datenbank online!'));
+mongoose.connect('mongodb://admin:jIosPtbsgL11VazN@ac-plfoc5s-shard-00-00.j4hrglf.mongodb.net:27017,ac-plfoc5s-shard-00-01.j4hrglf.mongodb.net:27017,ac-plfoc5s-shard-00-02.j4hrglf.mongodb.net:27017/?ssl=true&replicaSet=atlas-dj7vc0-shard-0&authSource=admin&retryWrites=true&w=majority', () => console.log('Datenbank online!'));
 
